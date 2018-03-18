@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+	<meta charset="utf-8">
+	<title>Quarts to Liters Conversion</title>
+	<script>
+		function computeVolume() {
+			var input = window.prompt("Please enter a value in Quarts.");
+			var quarts = parseInt(input);
+			var liters = quarts * 0.94635;
+			var output = 'Liters: ' + liters;
+			var div = document.getElementById('output');
+			div.innerHTML = output;
+		}
+	</script>
+</head>
+
+<body>
+	<h1 style="text-align: center;">Quarts to Liters Conversion</h1>
+	<h3 style="text-align: center;">When you're ready to begin, click "Convert to Liters."</h3>
+	<p style="text-align: center;"><button type="button" onclick="computeVolume()">Convert to Liters</button></p>
+	<div id="output"></div>
+	<br>
+	<p style="text-align: center;"><img src="http://media.istockphoto.com/vectors/measuring-cup-vector-id508328960?k=6&m=508328960&s=170667a&w=0&h=j16DD1RWZ1PE6n0zhgKgCKf-cytkLKYqD7otnD-AvtY=" alt="Conversion"></p>
+</body>
+
+</html>
